@@ -32,6 +32,10 @@ docker exec -it {containerId} /bin/bash
 4.修改mysql配置
 进入容器内部的话是没有vi的，apt-get install也不行，不知道是不是我电脑的原因。我的解决方案是
 1>先apt-get update,在apt-get install vim，就可以了。
+
+<!--break-->
+
+
 2>挂载外部my.cnf配置文件，命令如下
 
 ```
